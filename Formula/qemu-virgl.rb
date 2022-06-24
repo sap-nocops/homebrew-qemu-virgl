@@ -39,6 +39,11 @@ class QemuVirgl < Formula
     sha256 "6d27699ba454b5ecb7411822a745b89dce3dea5fccabfb56c84ad698f3222dd4"
   end
 
+  patch :p1 do
+    url "https://lore.kernel.org/all/20220207225211.15281-1-agraf@csgraf.de/raw"
+    sha256 "cff2c2d6fa6fb8e37dba82e440cba40aa4462245d98f362ed5ebcf24a1f611d2"
+  end
+
   def install
     ENV["LIBTOOL"] = "glibtool"
 
